@@ -1393,13 +1393,14 @@ button .img-footer {
 
 @media only screen and (min-width:768px) {
   #menu-toggle,.hamburger-btn {
-    display: none;
+    display: block;
   }
 
   .nav-content {
-    gap: 100px;
-    flex-grow: 0;
-    justify-content: flex-start;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 10px;
   }
 
 .menu {
@@ -1424,8 +1425,27 @@ button .img-footer {
     }
     
     .navbar-content{
-        width: 80%; 
+        width: 90%; 
     }
+
+    #menu-toggle {
+  display: none;
+}
+
+.humburger-btn{
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  order: 3;
+  padding-left: 10px;
+}
+
+#menu-toggle:checked .menu {
+    display: block;
+}
+
+
+    /* Header-section */
     .header-section{
       height: 600px;
       padding: 60px 0;
